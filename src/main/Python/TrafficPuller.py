@@ -24,5 +24,5 @@ reddit = praw.Reddit(user_agent=reddit_user_agent,
 traffic_json = reddit.request('GET', 'r/NeutralPolitics/about/traffic/')
 
 if traffic_json is not None:
-    with open('~/Dropbox' + current_date + '.json', 'w') as outfile:
+    with open('~/Dropbox/' + current_date + '.json', 'w') as outfile:
         json.dump(traffic_json, outfile)
