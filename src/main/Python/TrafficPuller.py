@@ -2,7 +2,7 @@
 
 import praw
 import json
-import pprint
+from time import gmtime, strftime
 
 with open('../resources/credentials.json') as data_file:
     data = json.load(data_file)
@@ -13,6 +13,7 @@ reddit_user_name = data["user"]["username"]
 reddit_user_password = data["user"]["password"]
 reddit_user_agent = "mod utils v0.1"
 subreddit_name = 'NeutralPolitics'
+current_date = strftime("%Y-%m-%d", gmtime())
 
 reddit = praw.Reddit(user_agent=reddit_user_agent,
                      client_id=reddit_app_key,
@@ -21,7 +22,7 @@ reddit = praw.Reddit(user_agent=reddit_user_agent,
                      password=reddit_user_password)
 
 traffic_json = reddit.request('GET', 'r/NeutralPolitics/about/traffic/')
-pp = pprint.PrettyPrinter(indent=4)
 
-pp.pprint(traffic_json["day"])
-
+if traffic_json is not None:
+    with open('~/Dropbox' + current_date + '.json', 'w') as outfile:
+        json.dump(traffic_json, outfile)
