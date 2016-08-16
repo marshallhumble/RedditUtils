@@ -3,17 +3,21 @@
 import praw
 import json
 from time import gmtime, strftime
+from os.path import expanduser
+
 
 with open('../resources/credentials.json') as data_file:
     data = json.load(data_file)
 
+home = expanduser("~")
 reddit_app_key = data["script"]["client_id"]
 reddit_app_secret = data["script"]["client_secret"]
 reddit_user_name = data["user"]["username"]
 reddit_user_password = data["user"]["password"]
 reddit_user_agent = "mod utils v0.1"
-subreddit_name = 'NeutralPolitics'
+subreddit_name = data["sub"]["subreddit"]
 current_date = strftime("%Y-%m-%d", gmtime())
+save_path = data["file_settings"]["save_location"]
 
 reddit = praw.Reddit(user_agent=reddit_user_agent,
                      client_id=reddit_app_key,
@@ -21,8 +25,8 @@ reddit = praw.Reddit(user_agent=reddit_user_agent,
                      username=reddit_user_name,
                      password=reddit_user_password)
 
-traffic_json = reddit.request('GET', 'r/NeutralPolitics/about/traffic/')
+traffic_json = reddit.request('GET', 'r/' + subreddit_name + '/about/traffic/')
 
 if traffic_json is not None:
-    with open('~/Dropbox/' + current_date + '.json', 'w') as outfile:
+    with open(home + save_path + current_date + '.json', 'w') as outfile:
         json.dump(traffic_json, outfile)
