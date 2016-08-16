@@ -5,7 +5,6 @@ import json
 from time import gmtime, strftime
 from os.path import expanduser
 
-
 with open('../resources/credentials.json') as data_file:
     data = json.load(data_file)
 
@@ -28,5 +27,5 @@ reddit = praw.Reddit(user_agent=reddit_user_agent,
 traffic_json = reddit.request('GET', 'r/' + subreddit_name + '/about/traffic/')
 
 if traffic_json is not None:
-    with open(home + save_path + current_date + '.json', 'w') as outfile:
+    with open(home + '/' + save_path + '/' + current_date + '.json', 'w') as outfile:
         json.dump(traffic_json, outfile)
