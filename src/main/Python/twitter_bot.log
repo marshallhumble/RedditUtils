@@ -1,0 +1,202 @@
+2016-08-16 20:07:49,081:INFO: Starting new HTTP connection (1): update_checker.bryceboe.com
+2016-08-16 20:07:49,988:DEBUG: "PUT /check HTTP/1.1" 200 108
+2016-08-16 20:07:50,614:INFO: Starting new HTTPS connection (1): www.reddit.com
+2016-08-16 20:07:51,432:DEBUG: "POST /api/v1/access_token HTTP/1.1" 200 None
+2016-08-16 20:07:51,434:DEBUG: Fetching: GET https://oauth.reddit.com/comments/NeutralPolitics/
+2016-08-16 20:07:51,434:DEBUG: Headers: {'Authorization': 'bearer tVkRFr17mXDteYnZdaVTlIVhooM'}
+2016-08-16 20:07:51,434:DEBUG: Data: None
+2016-08-16 20:07:51,434:DEBUG: Params: {'sort': 'best', 'limit': 2048, 'raw_json': 1}
+2016-08-16 20:07:51,624:INFO: Starting new HTTPS connection (1): oauth.reddit.com
+2016-08-16 20:07:52,535:DEBUG: "GET /comments/NeutralPolitics/?sort=best&limit=2048&raw_json=1 HTTP/1.1" 404 38
+2016-08-16 20:07:52,536:DEBUG: Response: 404 (38 bytes)
+2016-08-16 20:09:46,213:INFO: Starting new HTTP connection (1): update_checker.bryceboe.com
+2016-08-16 20:09:46,437:DEBUG: "PUT /check HTTP/1.1" 200 108
+2016-08-16 20:09:47,149:INFO: Starting new HTTPS connection (1): www.reddit.com
+2016-08-16 20:09:47,864:DEBUG: "POST /api/v1/access_token HTTP/1.1" 200 None
+2016-08-16 20:09:47,868:DEBUG: Fetching: GET https://oauth.reddit.com/comments/NeutralPolitics/
+2016-08-16 20:09:47,868:DEBUG: Headers: {'Authorization': 'bearer GoJtYvtm-PaOMb2kMvia5u8UVMI'}
+2016-08-16 20:09:47,868:DEBUG: Data: None
+2016-08-16 20:09:47,868:DEBUG: Params: {'sort': 'best', 'raw_json': 1, 'limit': 2048}
+2016-08-16 20:09:47,871:INFO: Starting new HTTPS connection (1): oauth.reddit.com
+2016-08-16 20:09:48,121:DEBUG: "GET /comments/NeutralPolitics/?sort=best&raw_json=1&limit=2048 HTTP/1.1" 404 38
+2016-08-16 20:09:48,122:DEBUG: Response: 404 (38 bytes)
+2016-08-16 20:10:16,331:INFO: Starting new HTTPS connection (1): www.reddit.com
+2016-08-16 20:10:17,050:DEBUG: "POST /api/v1/access_token HTTP/1.1" 200 None
+2016-08-16 20:10:17,052:DEBUG: Fetching: GET https://oauth.reddit.com/comments/NeutralPolitics/
+2016-08-16 20:10:17,052:DEBUG: Headers: {'Authorization': 'bearer fh9K7JZDQC9ztu0B4XzvxYdv5Lo'}
+2016-08-16 20:10:17,052:DEBUG: Data: None
+2016-08-16 20:10:17,052:DEBUG: Params: {'limit': 2048, 'raw_json': 1, 'sort': 'best'}
+2016-08-16 20:10:17,056:INFO: Starting new HTTPS connection (1): oauth.reddit.com
+2016-08-16 20:10:17,277:DEBUG: "GET /comments/NeutralPolitics/?limit=2048&raw_json=1&sort=best HTTP/1.1" 404 38
+2016-08-16 20:10:17,278:DEBUG: Response: 404 (38 bytes)
+2016-08-16 20:24:26,763:INFO: Starting new HTTPS connection (1): www.reddit.com
+2016-08-16 20:24:27,393:DEBUG: "POST /api/v1/access_token HTTP/1.1" 200 None
+2016-08-16 20:24:27,394:DEBUG: Fetching: GET https://oauth.reddit.com/comments/NeutralPolitics/
+2016-08-16 20:24:27,394:DEBUG: Headers: {'Authorization': 'bearer P_uTzsl4zuQqvNr4RrzJXzzGaBo'}
+2016-08-16 20:24:27,394:DEBUG: Data: None
+2016-08-16 20:24:27,395:DEBUG: Params: {'sort': 'best', 'raw_json': 1, 'limit': 2048}
+2016-08-16 20:24:27,700:INFO: Starting new HTTPS connection (1): oauth.reddit.com
+2016-08-16 20:24:28,566:DEBUG: "GET /comments/NeutralPolitics/?sort=best&raw_json=1&limit=2048 HTTP/1.1" 404 38
+2016-08-16 20:24:28,567:DEBUG: Response: 404 (38 bytes)
+2016-08-16 20:34:16,609:INFO: Starting new HTTPS connection (1): www.reddit.com
+2016-08-16 20:34:17,531:DEBUG: "POST /api/v1/access_token HTTP/1.1" 200 None
+2016-08-16 20:34:17,533:DEBUG: Fetching: GET https://oauth.reddit.com/api/v1/me
+2016-08-16 20:34:17,533:DEBUG: Headers: {'Authorization': 'bearer Om81ZhS5cMMjALVHtK2dzbVmwus'}
+2016-08-16 20:34:17,534:DEBUG: Data: None
+2016-08-16 20:34:17,534:DEBUG: Params: {'raw_json': 1}
+2016-08-16 20:34:17,537:INFO: Starting new HTTPS connection (1): oauth.reddit.com
+2016-08-16 20:34:17,897:DEBUG: "GET /api/v1/me?raw_json=1 HTTP/1.1" 200 656
+2016-08-16 20:34:17,897:DEBUG: Response: 200 (656 bytes)
+2016-08-16 20:34:44,910:INFO: Starting new HTTPS connection (1): www.reddit.com
+2016-08-16 20:34:45,695:DEBUG: "POST /api/v1/access_token HTTP/1.1" 200 None
+2016-08-16 20:34:45,696:DEBUG: Fetching: GET https://oauth.reddit.com/message/unread/
+2016-08-16 20:34:45,696:DEBUG: Headers: {'Authorization': 'bearer NduhxDa4dwajeLLZ8Fg3PZDamBk'}
+2016-08-16 20:34:45,696:DEBUG: Data: None
+2016-08-16 20:34:45,697:DEBUG: Params: {'raw_json': 1, 'limit': 100, 'mark': False}
+2016-08-16 20:34:45,700:INFO: Starting new HTTPS connection (1): oauth.reddit.com
+2016-08-16 20:34:46,203:DEBUG: "GET /message/unread/?raw_json=1&limit=100&mark=False HTTP/1.1" 200 634
+2016-08-16 20:34:46,204:DEBUG: Response: 200 (634 bytes)
+2016-08-16 20:34:54,402:INFO: Starting new HTTPS connection (1): www.reddit.com
+2016-08-16 20:34:55,215:DEBUG: "POST /api/v1/access_token HTTP/1.1" 200 None
+2016-08-16 20:34:55,216:DEBUG: Fetching: GET https://oauth.reddit.com/message/unread/
+2016-08-16 20:34:55,216:DEBUG: Headers: {'Authorization': 'bearer 0EohMitCVV6vps8JXIRIekCbMr4'}
+2016-08-16 20:34:55,216:DEBUG: Data: None
+2016-08-16 20:34:55,216:DEBUG: Params: {'limit': 100, 'raw_json': 1, 'mark': 'd6kjswg'}
+2016-08-16 20:34:55,220:INFO: Starting new HTTPS connection (1): oauth.reddit.com
+2016-08-16 20:34:55,639:DEBUG: "GET /message/unread/?limit=100&raw_json=1&mark=d6kjswg HTTP/1.1" 200 634
+2016-08-16 20:34:55,640:DEBUG: Response: 200 (634 bytes)
+2016-08-16 20:37:26,662:INFO: Starting new HTTPS connection (1): www.reddit.com
+2016-08-16 20:37:27,391:DEBUG: "POST /api/v1/access_token HTTP/1.1" 200 None
+2016-08-16 20:37:27,393:DEBUG: Fetching: GET https://oauth.reddit.com/r/NeutralPolitics/new
+2016-08-16 20:37:27,393:DEBUG: Headers: {'Authorization': 'bearer p5zahjDUJURSlbzeoqp6AfQSKts'}
+2016-08-16 20:37:27,394:DEBUG: Data: None
+2016-08-16 20:37:27,394:DEBUG: Params: {'raw_json': 1, 'limit': 100}
+2016-08-16 20:37:28,006:INFO: Starting new HTTPS connection (1): oauth.reddit.com
+2016-08-16 20:37:29,329:DEBUG: "GET /r/NeutralPolitics/new?raw_json=1&limit=100 HTTP/1.1" 200 108891
+2016-08-16 20:37:29,435:DEBUG: Response: 200 (108891 bytes)
+2016-08-16 20:38:45,927:INFO: Starting new HTTPS connection (1): www.reddit.com
+2016-08-16 20:38:46,643:DEBUG: "POST /api/v1/access_token HTTP/1.1" 200 None
+2016-08-16 20:38:46,645:DEBUG: Fetching: GET https://oauth.reddit.com/r/NeutralPolitics/new
+2016-08-16 20:38:46,645:DEBUG: Headers: {'Authorization': 'bearer rACG8Q3IKKHU4_fNu312cKFZaGc'}
+2016-08-16 20:38:46,645:DEBUG: Data: None
+2016-08-16 20:38:46,645:DEBUG: Params: {'limit': 100, 'raw_json': 1}
+2016-08-16 20:38:46,650:INFO: Starting new HTTPS connection (1): oauth.reddit.com
+2016-08-16 20:38:48,076:DEBUG: "GET /r/NeutralPolitics/new?limit=100&raw_json=1 HTTP/1.1" 200 108913
+2016-08-16 20:38:48,239:DEBUG: Response: 200 (108913 bytes)
+2016-08-16 20:39:21,115:INFO: Starting new HTTPS connection (1): www.reddit.com
+2016-08-16 20:39:21,786:DEBUG: "POST /api/v1/access_token HTTP/1.1" 200 None
+2016-08-16 20:39:21,788:DEBUG: Fetching: GET https://oauth.reddit.com/r/NeutralPolitics/new
+2016-08-16 20:39:21,788:DEBUG: Headers: {'Authorization': 'bearer Oa5vBx64p7ES_DQmQkvmGhEewoE'}
+2016-08-16 20:39:21,788:DEBUG: Data: None
+2016-08-16 20:39:21,788:DEBUG: Params: {'limit': 100, 'raw_json': 1}
+2016-08-16 20:39:21,794:INFO: Starting new HTTPS connection (1): oauth.reddit.com
+2016-08-16 20:39:23,404:DEBUG: "GET /r/NeutralPolitics/new?limit=100&raw_json=1 HTTP/1.1" 200 108903
+2016-08-16 20:39:23,503:DEBUG: Response: 200 (108903 bytes)
+2016-08-16 20:39:42,767:INFO: Starting new HTTPS connection (1): www.reddit.com
+2016-08-16 20:39:43,476:DEBUG: "POST /api/v1/access_token HTTP/1.1" 200 None
+2016-08-16 20:39:43,479:DEBUG: Fetching: GET https://oauth.reddit.com/r/NeutralPolitics/new
+2016-08-16 20:39:43,479:DEBUG: Headers: {'Authorization': 'bearer Thd_qiFJvJdgxk_YdB1AmAPItfY'}
+2016-08-16 20:39:43,479:DEBUG: Data: None
+2016-08-16 20:39:43,479:DEBUG: Params: {'limit': 100, 'raw_json': 1}
+2016-08-16 20:39:43,484:INFO: Starting new HTTPS connection (1): oauth.reddit.com
+2016-08-16 20:39:45,020:DEBUG: "GET /r/NeutralPolitics/new?limit=100&raw_json=1 HTTP/1.1" 200 108902
+2016-08-16 20:39:45,123:DEBUG: Response: 200 (108902 bytes)
+2016-08-16 20:40:42,579:INFO: Starting new HTTPS connection (1): www.reddit.com
+2016-08-16 20:40:43,176:DEBUG: "POST /api/v1/access_token HTTP/1.1" 200 None
+2016-08-16 20:40:43,177:DEBUG: Fetching: GET https://oauth.reddit.com/r/NeutralPolitics/new
+2016-08-16 20:40:43,178:DEBUG: Headers: {'Authorization': 'bearer AP5jqW7IB6nKV_xJuHKAqa0_YCc'}
+2016-08-16 20:40:43,178:DEBUG: Data: None
+2016-08-16 20:40:43,178:DEBUG: Params: {'raw_json': 1, 'limit': 100}
+2016-08-16 20:40:43,181:INFO: Starting new HTTPS connection (1): oauth.reddit.com
+2016-08-16 20:40:45,224:DEBUG: "GET /r/NeutralPolitics/new?raw_json=1&limit=100 HTTP/1.1" 200 108902
+2016-08-16 20:40:45,314:DEBUG: Response: 200 (108902 bytes)
+2016-08-16 20:40:51,632:INFO: Starting new HTTPS connection (1): www.reddit.com
+2016-08-16 20:40:52,396:DEBUG: "POST /api/v1/access_token HTTP/1.1" 200 None
+2016-08-16 20:40:52,398:DEBUG: Fetching: GET https://oauth.reddit.com/r/NeutralPolitics/new
+2016-08-16 20:40:52,398:DEBUG: Headers: {'Authorization': 'bearer uJ7n225lofoPwDiD6dRLMPHcGgY'}
+2016-08-16 20:40:52,398:DEBUG: Data: None
+2016-08-16 20:40:52,398:DEBUG: Params: {'limit': 100, 'raw_json': 1}
+2016-08-16 20:40:52,403:INFO: Starting new HTTPS connection (1): oauth.reddit.com
+2016-08-16 20:40:53,930:DEBUG: "GET /r/NeutralPolitics/new?limit=100&raw_json=1 HTTP/1.1" 200 108889
+2016-08-16 20:40:54,098:DEBUG: Response: 200 (108889 bytes)
+2016-08-16 20:40:54,112:DEBUG: Fetching: GET https://oauth.reddit.com/comments/4xsbc5/
+2016-08-16 20:40:54,113:DEBUG: Headers: {'Authorization': 'bearer uJ7n225lofoPwDiD6dRLMPHcGgY'}
+2016-08-16 20:40:54,113:DEBUG: Data: None
+2016-08-16 20:40:54,113:DEBUG: Params: {'limit': 2048, 'raw_json': 1, 'sort': 'best'}
+2016-08-16 20:40:56,080:DEBUG: "GET /comments/4xsbc5/?limit=2048&raw_json=1&sort=best HTTP/1.1" 200 27788
+2016-08-16 20:40:56,114:DEBUG: Response: 200 (27788 bytes)
+2016-08-16 20:41:04,458:INFO: Starting new HTTPS connection (1): www.reddit.com
+2016-08-16 20:41:05,603:DEBUG: "POST /api/v1/access_token HTTP/1.1" 200 None
+2016-08-16 20:41:05,605:DEBUG: Fetching: GET https://oauth.reddit.com/r/NeutralPolitics/new
+2016-08-16 20:41:05,605:DEBUG: Headers: {'Authorization': 'bearer Gba61tW3xtKuMf--j7-aRJn0EDo'}
+2016-08-16 20:41:05,605:DEBUG: Data: None
+2016-08-16 20:41:05,605:DEBUG: Params: {'limit': 100, 'raw_json': 1}
+2016-08-16 20:41:05,609:INFO: Starting new HTTPS connection (1): oauth.reddit.com
+2016-08-16 20:41:06,933:DEBUG: "GET /r/NeutralPolitics/new?limit=100&raw_json=1 HTTP/1.1" 200 108909
+2016-08-16 20:41:07,099:DEBUG: Response: 200 (108909 bytes)
+2016-08-16 20:41:14,692:INFO: Starting new HTTPS connection (1): www.reddit.com
+2016-08-16 20:41:15,433:DEBUG: "POST /api/v1/access_token HTTP/1.1" 200 None
+2016-08-16 20:41:15,437:DEBUG: Fetching: GET https://oauth.reddit.com/r/NeutralPolitics/new
+2016-08-16 20:41:15,437:DEBUG: Headers: {'Authorization': 'bearer wEyPjmpr7twb4DUO5tXEaFIjceE'}
+2016-08-16 20:41:15,437:DEBUG: Data: None
+2016-08-16 20:41:15,438:DEBUG: Params: {'raw_json': 1, 'limit': 100}
+2016-08-16 20:41:15,442:INFO: Starting new HTTPS connection (1): oauth.reddit.com
+2016-08-16 20:41:17,212:DEBUG: "GET /r/NeutralPolitics/new?raw_json=1&limit=100 HTTP/1.1" 200 108915
+2016-08-16 20:41:17,306:DEBUG: Response: 200 (108915 bytes)
+2016-08-16 20:41:17,320:DEBUG: Fetching: GET https://oauth.reddit.com/comments/4xsbc5/
+2016-08-16 20:41:17,320:DEBUG: Headers: {'Authorization': 'bearer wEyPjmpr7twb4DUO5tXEaFIjceE'}
+2016-08-16 20:41:17,320:DEBUG: Data: None
+2016-08-16 20:41:17,320:DEBUG: Params: {'raw_json': 1, 'limit': 2048, 'sort': 'best'}
+2016-08-16 20:41:18,814:DEBUG: "GET /comments/4xsbc5/?raw_json=1&limit=2048&sort=best HTTP/1.1" 200 27785
+2016-08-16 20:41:18,817:DEBUG: Response: 200 (27785 bytes)
+2016-08-16 20:41:28,639:INFO: Starting new HTTPS connection (1): www.reddit.com
+2016-08-16 20:41:29,257:DEBUG: "POST /api/v1/access_token HTTP/1.1" 200 None
+2016-08-16 20:41:29,258:DEBUG: Fetching: GET https://oauth.reddit.com/r/NeutralPolitics/new
+2016-08-16 20:41:29,259:DEBUG: Headers: {'Authorization': 'bearer Nc95P82SSCQ5jdB_yrnZ-9K9MjY'}
+2016-08-16 20:41:29,259:DEBUG: Data: None
+2016-08-16 20:41:29,259:DEBUG: Params: {'raw_json': 1, 'limit': 100}
+2016-08-16 20:41:29,262:INFO: Starting new HTTPS connection (1): oauth.reddit.com
+2016-08-16 20:41:31,102:DEBUG: "GET /r/NeutralPolitics/new?raw_json=1&limit=100 HTTP/1.1" 200 108903
+2016-08-16 20:41:31,372:DEBUG: Response: 200 (108903 bytes)
+2016-08-16 20:41:31,386:DEBUG: Fetching: GET https://oauth.reddit.com/comments/4xsbc5/
+2016-08-16 20:41:31,387:DEBUG: Headers: {'Authorization': 'bearer Nc95P82SSCQ5jdB_yrnZ-9K9MjY'}
+2016-08-16 20:41:31,387:DEBUG: Data: None
+2016-08-16 20:41:31,387:DEBUG: Params: {'raw_json': 1, 'limit': 2048, 'sort': 'best'}
+2016-08-16 20:41:32,739:DEBUG: "GET /comments/4xsbc5/?raw_json=1&limit=2048&sort=best HTTP/1.1" 200 27786
+2016-08-16 20:41:32,787:DEBUG: Response: 200 (27786 bytes)
+2016-08-16 20:55:23,198:INFO: Starting new HTTPS connection (1): www.reddit.com
+2016-08-16 20:55:23,831:DEBUG: "POST /api/v1/access_token HTTP/1.1" 200 None
+2016-08-16 20:55:23,834:DEBUG: Fetching: GET https://oauth.reddit.com/r/NeutralPolitics/new
+2016-08-16 20:55:23,834:DEBUG: Headers: {'Authorization': 'bearer BAMNCr7jG3CsCpYqkMvzMiOztgU'}
+2016-08-16 20:55:23,834:DEBUG: Data: None
+2016-08-16 20:55:23,834:DEBUG: Params: {'raw_json': 1, 'limit': 100}
+2016-08-16 20:55:24,432:INFO: Starting new HTTPS connection (1): oauth.reddit.com
+2016-08-16 20:55:26,085:DEBUG: "GET /r/NeutralPolitics/new?raw_json=1&limit=100 HTTP/1.1" 200 108897
+2016-08-16 20:55:26,233:DEBUG: Response: 200 (108897 bytes)
+2016-08-16 20:55:37,682:INFO: Starting new HTTPS connection (1): www.reddit.com
+2016-08-16 20:55:38,474:DEBUG: "POST /api/v1/access_token HTTP/1.1" 200 None
+2016-08-16 20:55:38,475:DEBUG: Fetching: GET https://oauth.reddit.com/r/NeutralPolitics/new
+2016-08-16 20:55:38,475:DEBUG: Headers: {'Authorization': 'bearer y5Ljo5rnSjwUR8HnmXWMBY5VMIg'}
+2016-08-16 20:55:38,475:DEBUG: Data: None
+2016-08-16 20:55:38,475:DEBUG: Params: {'raw_json': 1, 'limit': 100}
+2016-08-16 20:55:38,479:INFO: Starting new HTTPS connection (1): oauth.reddit.com
+2016-08-16 20:55:39,972:DEBUG: "GET /r/NeutralPolitics/new?raw_json=1&limit=100 HTTP/1.1" 200 108883
+2016-08-16 20:55:40,217:DEBUG: Response: 200 (108883 bytes)
+2016-08-16 20:56:01,904:INFO: Starting new HTTPS connection (1): www.reddit.com
+2016-08-16 20:56:02,644:DEBUG: "POST /api/v1/access_token HTTP/1.1" 200 None
+2016-08-16 20:56:02,647:DEBUG: Fetching: GET https://oauth.reddit.com/r/NeutralPolitics/new
+2016-08-16 20:56:02,647:DEBUG: Headers: {'Authorization': 'bearer skZ2OyEKyDWT46uqgdPMBK2ysu8'}
+2016-08-16 20:56:02,648:DEBUG: Data: None
+2016-08-16 20:56:02,648:DEBUG: Params: {'limit': 100, 'raw_json': 1}
+2016-08-16 20:56:02,651:INFO: Starting new HTTPS connection (1): oauth.reddit.com
+2016-08-16 20:56:04,078:DEBUG: "GET /r/NeutralPolitics/new?limit=100&raw_json=1 HTTP/1.1" 200 108891
+2016-08-16 20:56:04,202:DEBUG: Response: 200 (108891 bytes)
+2016-08-16 20:56:36,575:INFO: Starting new HTTPS connection (1): www.reddit.com
+2016-08-16 20:56:37,247:DEBUG: "POST /api/v1/access_token HTTP/1.1" 200 None
+2016-08-16 20:56:37,249:DEBUG: Fetching: GET https://oauth.reddit.com/r/NeutralPolitics/new
+2016-08-16 20:56:37,249:DEBUG: Headers: {'Authorization': 'bearer wmxXrfaSEEuu3KfNgLdfFdLUDfU'}
+2016-08-16 20:56:37,249:DEBUG: Data: None
+2016-08-16 20:56:37,249:DEBUG: Params: {'limit': 100, 'raw_json': 1}
+2016-08-16 20:56:37,253:INFO: Starting new HTTPS connection (1): oauth.reddit.com
+2016-08-16 20:56:40,223:DEBUG: "GET /r/NeutralPolitics/new?limit=100&raw_json=1 HTTP/1.1" 200 108903
+2016-08-16 20:56:40,332:DEBUG: Response: 200 (108903 bytes)
