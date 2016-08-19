@@ -25,8 +25,8 @@ SUBREDDIT_TO_MONITOR = data["sub"]["subreddit"]
 log_path = data["file_settings"]["log_path"]
 POSTED_CACHE = 'posted_posts.txt'
 home = expanduser("~")
-# filepath = home + '/' + log_path + '/' + 'twitter_bot.log'
-filepath = home + '/' + 'twitter_bot.log'
+filepath = home + '/' + log_path + '/' + 'twitter_bot.log'
+
 logging.basicConfig(format='%(asctime)s:%(levelname)s: %(message)s', filename=filepath, level=logging.DEBUG)
 
 # Reddit Oauth Credentials
@@ -52,16 +52,22 @@ twitter = tweepy.API(auth)
 
 
 def get_new_links():
-    print('/' + log_path + '/' + POSTED_CACHE)
-
-    with open('/' + log_path + '/' + POSTED_CACHE, 'rw') as f:
+    with open(home + '/' + log_path + '/' + POSTED_CACHE, 'r') as f:
         posted = f.read()
 
     new_posts = reddit.subreddit(SUBREDDIT_TO_MONITOR).new()
     while new_posts.next():
         rid = next(new_posts).id
         if rid not in posted:
+            with open(home + '/' + log_path + '/' + POSTED_CACHE, 'a') as f:
+                f.write(rid + '\n')
+
             title = next(new_posts).title[:90] + '... ' + short_link_prefix + rid
-            twitter.update_status(title)
-            print(len(title))
-            f.write(rid)
+            try:
+                twitter.update_status(title)
+            except tweepy.TweepError:
+                continue
+
+
+if __name__ == "__main__":
+    get_new_links()
