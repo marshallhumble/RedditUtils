@@ -5,10 +5,15 @@ import json
 from time import gmtime, strftime
 from os.path import expanduser
 
-with open('../resources/credentials.json') as data_file:
-    data = json.load(data_file)
-
 home = expanduser("~")
+
+try:
+    with open('../resources/credentials.json') as data_file:
+        data = json.load(data_file)
+except FileNotFoundError:
+    with open(home + '/RedditUtls/src/main/resources/credentials.json') as data_file:
+        data = json.load(data_file)
+
 reddit_app_key = data["script"]["client_id"]
 reddit_app_secret = data["script"]["client_secret"]
 reddit_user_name = data["user"]["username"]
