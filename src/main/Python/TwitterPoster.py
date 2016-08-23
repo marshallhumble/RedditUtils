@@ -4,13 +4,17 @@ import praw
 
 import json
 import tweepy
-import time
-import os
 import logging
 from os.path import expanduser
 
-with open('../resources/credentials.json') as data_file:
-    data = json.load(data_file)
+home = expanduser("~")
+
+try:
+    with open('../resources/credentials.json') as data_file:
+        data = json.load(data_file)
+except FileNotFoundError:
+    with open(home + '/RedditUtls/src/main/resources/credentials.json') as data_file:
+        data = json.load(data_file)
 
 # Place your Twitter API keys here
 OAUTH_TOKEN = data["twitter"]["oauth_token"]
@@ -23,8 +27,7 @@ SUBREDDIT_TO_MONITOR = data["sub"]["subreddit"]
 
 # File System Settings
 log_path = data["file_settings"]["log_path"]
-POSTED_CACHE = 'posted_posts.txt'
-home = expanduser("~")
+POSTED_CACHE = './posted_posts.txt'
 filepath = home + '/' + log_path + '/' + 'twitter_bot.log'
 
 logging.basicConfig(format='%(asctime)s:%(levelname)s: %(message)s', filename=filepath, level=logging.DEBUG)
@@ -52,22 +55,36 @@ twitter = tweepy.API(auth)
 
 
 def get_new_links():
-    with open(home + '/' + log_path + '/' + POSTED_CACHE, 'r') as f:
-        posted = f.read()
-
     new_posts = reddit.subreddit(SUBREDDIT_TO_MONITOR).new()
     while new_posts.next():
         rid = next(new_posts).id
-        if rid not in posted:
-            with open(home + '/' + log_path + '/' + POSTED_CACHE, 'a') as f:
+        if not already_tweeted(rid):
+            with open(POSTED_CACHE, 'a') as f:
                 f.write(rid + '\n')
 
             title = next(new_posts).title[:90] + '... ' + short_link_prefix + rid
+            print(title)
             try:
                 twitter.update_status(title)
+                append_post_id(rid)
             except tweepy.TweepError:
                 continue
 
+
+def already_tweeted(post_id):
+    ''' Checks if the reddit Twitter bot has already tweeted a post. '''
+    found = False
+    with open(POSTED_CACHE, 'r') as in_file:
+        for line in in_file:
+            if post_id in line:
+                found = True
+                break
+    return found
+
+
+def append_post_id(post_id):
+    with open(POSTED_CACHE, 'a') as in_file:
+        in_file.write(post_id + '\n')
 
 if __name__ == "__main__":
     get_new_links()
