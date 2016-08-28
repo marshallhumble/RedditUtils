@@ -16,6 +16,9 @@ dependencies {
 	compile 'net.dean.jraw:JRAW:0.9.0'
 	compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-csv', version: '2.8.1'
 	compile group: 'org.jsoup', name: 'jsoup', version: '1.9.2'
+	compile group: 'org.xerial', name: 'sqlite-jdbc', version: '3.8.11.2'
+	compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
+	compile group: 'org.apache.commons', name: 'commons-collections4', version: '4.1'
 
 }
 
