@@ -13,7 +13,7 @@ try:
     with open('../resources/credentials.json') as data_file:
         data = json.load(data_file)
 except FileNotFoundError:
-    with open(home + '/RedditUtls/src/main/resources/credentials.json') as data_file:
+    with open(home + '/RedditUtils/src/main/resources/credentials.json') as data_file:
         data = json.load(data_file)
 
 # Place your Twitter API keys here
