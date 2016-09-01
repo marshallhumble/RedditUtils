@@ -27,7 +27,7 @@ SUBREDDIT_TO_MONITOR = data["sub"]["subreddit"]
 
 # File System Settings
 log_path = data["file_settings"]["log_path"]
-POSTED_CACHE = './posted_posts.txt'
+POSTED_CACHE = 'posted_posts.txt'
 filepath = home + '/' + log_path + '/' + 'twitter_bot.log'
 
 logging.basicConfig(format='%(asctime)s:%(levelname)s: %(message)s', filename=filepath, level=logging.DEBUG)
